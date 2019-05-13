@@ -1,0 +1,32 @@
+.bouncy{
+    background: $bg-main;
+    .wrapper{
+        padding: 100px 0;
+    }
+    &-head{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 16px;
+        margin-bottom: 34px;
+        color: $color-h;
+    }
+    &-text{
+        line-height: 1.8;
+        color: $color-main-text;
+        @extend %dop-text;
+        margin-bottom: 36px;
+    }
+    &-btn{
+        @extend %main-text;
+        @include buttons($color-h, 12px, 30px);
+        border-radius: 32px;
+        margin-bottom: 28px;
+    }
+    &-img{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../img/bouncy.jpg);
+        height: 340px;
+    }
+}

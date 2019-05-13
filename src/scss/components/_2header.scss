@@ -1,0 +1,88 @@
+.header{
+    padding-top: 50px;
+    height: 90vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/maket_vipusk.png);
+    .container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 100%;
+    }
+    &-center{
+        position: absolute;
+        width: 100%;
+        top: 40%;
+    }
+    &__head{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        &__nav{
+            &__ul{
+                display: flex;
+                list-style-type: none;
+                margin-top: -6px;
+                &-li{
+                    @extend %navlinks;
+                    text-decoration: none;
+                    padding: 12px 14px;
+                    margin: 0 4px;
+                }
+            }
+        }
+    }
+    &-h1{
+        letter-spacing: 12px;
+        width: 100%;
+        margin-bottom: 42px;
+    }
+    &-text_head{
+        text-align: center;
+        width: 60%;
+        line-height: 1.6;
+        color: $color-text;
+        font-size: $fz-text;
+        margin: 0 auto;
+    }
+    &-bot{
+        position: absolute;
+        bottom: 10px;
+        right: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &-btn{
+        position: relative;
+        background-color: $color-hov;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: none;
+        transition: $transition;
+        cursor: pointer;
+        outline: none;
+        &:hover,
+        &:focus {
+            background-color: $bg-main;
+            &:before{
+                border-top: 2px solid $color-hov;
+                border-right: 2px solid $color-hov;
+            }
+        }
+        &:before{
+            display: block;
+            content: '';
+            position: absolute;
+            top: 47%;
+            right: 50%;
+            transform: translate(50%, -40%) rotate(135deg);
+            width: 12px;
+            height: 12px;
+            border-top: 2px solid $bg-main;
+            border-right: 2px solid $bg-main;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.footer{
+    padding: 80px 0 90px;
+    background: $bg-sec;
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+    &-head{
+        width: 100%;
+        color: #000;
+        text-align: center;
+    }
+    &-text{
+        @extend %dop-text;
+        width: 100%;
+        padding-top: 26px;
+        text-align: center;
+        color: $color-main-text;
+    }
+    &__icons{
+        display: flex;
+        padding-top: 40px;
+        &_wrap{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            cursor: pointer;
+            &_1{
+                background: #3b5998;
+                &-svg{
+                    width: 16px;
+                    height: 16px;
+                    color: $color-text;
+                }
+            }
+            &_2{
+                background: #26a6d1;
+                &-svg{
+                    width: 16px;
+                    height: 16px;
+                    color: $color-text;
+                }
+            }
+            &_3{
+                background: #0e76a8;
+                &-svg{
+                    width: 16px;
+                    height: 16px;
+                    color: $color-text;
+                }
+            }
+            &_4{
+                background: #3f729b;
+                &-svg{
+                    width: 16px;
+                    height: 16px;
+                    color: $color-text;
+                }
+            }
+            &_5{
+                background: #86c9ef;
+                &-svg{
+                    width: 16px;
+                    height: 16px;
+                    color: $color-text;
+                }
+            }
+        }
+    }
+}

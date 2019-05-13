@@ -1,0 +1,95 @@
+.featured{
+    background: $bg-main;
+    padding-top: 80px;
+    &-head{
+        width: 100%;
+        @extend %head-text;
+    }
+    &-text{
+        @extend %head-pod-text;
+        @extend %dop-text;
+        padding-bottom: 64px;
+        width: 25%;
+    }
+    &__wrapper-top{
+        height: 360px;
+        &_wrap{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0;
+            transition: $transition;
+            padding: 0 -15px 0 -15px;
+            &:hover{
+                opacity: 0.6;
+            }
+            h3{
+                @extend %head-text;
+                margin-bottom: 0;
+                color: $color-text;
+            }
+        }
+        &_fir{
+            padding: 0;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(../img/top_fir.png);
+        }
+        &_sec{
+            padding: 0;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(../img/top_sec.png);
+        }
+        &_thr{
+            padding: 0;
+            margin-right: -15px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(../img/top_thr.png);
+        }
+        h3{
+            z-index: 2;
+        }
+    }
+    .container-fluid{
+        padding-left: 0;
+    }
+    &__wrapper-bottom{
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        &_ins{
+            .row{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../img/feaut_bottom.png);
+    }
+    &__main-text{
+        color: $color-text;
+        span{
+            font-weight: 600;
+        }
+    }
+    &-btn{
+        @include buttons($color-text, 14px, 26px);
+        border-radius: 28px;
+        &:hover{
+            color: $color-text;
+            border-color: $color-text;
+            box-shadow: $box-shadow;
+        }
+    }
+}

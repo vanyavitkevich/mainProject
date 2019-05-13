@@ -1,0 +1,95 @@
+.testimonals{
+    padding: 80px 0 100px;
+    background: $bg-sec;
+    &-head{
+        width: 100%;
+        @extend %head-text;
+    }
+    &-text{
+        @extend %head-pod-text;
+        @extend %dop-text;
+        padding-bottom: 64px;
+        width: 45%;
+    }
+    &__slider{
+        width: 100%;
+        &__item{
+            display: flex!important;
+            justify-content: space-between!important;
+            background: $bg-main;
+            padding: 56px 110px 100px;
+            &__left{
+                height: 134px;
+                width: 134px;
+                margin: 0!important;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url(../img/testimonals.png);
+            }
+            &__right{
+                padding-left: 20px;
+                width: 76%;
+                height: 100%;
+                margin: 0!important;
+                &-text{
+                    @extend %main-text;
+                    margin-bottom: 32px;
+                    line-height: 1.4;
+                    color: $color-main-text;
+                }
+                &-name{
+                    @extend %main-text;
+                    font-weight: 600;
+                    margin-bottom: 12px;
+                    color: $color-hov;
+                    text-transform: uppercase;
+                }
+                &-qual{
+                    @extend %dop-text;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+
+    .slick {
+    
+        // радиокнопки
+        &-dots{
+          display: flex!important;
+          justify-content: center;
+          list-style-type: none;
+          position: relative;
+          bottom: 60px;
+          font-size: 0;
+          li{
+            padding: 8px!important;
+            button{
+              width: 14px!important;
+              height: 14px!important;
+              border-radius: 50%;
+              border: none;
+              background: transparent;
+              transition: $transition;
+              border: 1px solid $color-hov;
+              cursor: pointer;
+              outline: none;
+              &:hover{
+                border: 1px solid gold;
+              }
+            }
+          }
+          .slick-active{
+            button{
+              background: $color-hov;
+              &:hover{
+                border: 1px solid $color-hov;
+              }
+            }
+          }
+        }
+      }
+}

@@ -1,0 +1,112 @@
+.news{
+    padding: 76px 0 100px 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/news.png);
+    &-head{
+        width: 100%;
+        text-transform: uppercase;
+        color: $color-text;
+        letter-spacing: 4px;
+        margin-bottom: 44px;
+    }
+    &-text{
+        color: $color-sect-imp;
+        width: 28%;
+    }
+    .wrapper__slider{
+        padding: 105px 0 0 70px;
+    }
+    &__slider{
+        width: 100%;
+        min-height: 300px;
+        &__item{
+            &-head{
+                letter-spacing: 3px;
+                color: #e1e4e9;
+                padding-bottom: 16px;
+            }
+            &-name{
+                @extend %h3;
+                text-transform: uppercase;
+                font-size: $fz-dop;
+                color: $color-main-text;
+                padding-bottom: 20px;
+                span{
+                    color: $color-hov;
+                }
+            }
+            &-share{
+                @extend %h3;
+                font-size: $fz-dop;
+                color: $color-dop-h;
+                padding-bottom: 60px;
+                font-weight: 500;
+            }
+            &-text{
+                @extend %dop-text;
+                width: 40%;
+                color: $color-main-text;
+                padding-bottom: 46px;
+                line-height: 2;
+            }
+            &-btn{
+                @extend %main-text;
+                color: $color-sect-imp;
+                padding: 8px 12px 8px 0px;
+                transition: $transition;
+                border: 2px solid transparent;
+                background: transparent;
+                border-radius: 20px;
+                cursor: pointer;
+                outline: none;
+                &:hover{
+                    color: $color-hov;
+                    border: 2px solid $color-hov;
+                }
+            }
+        }
+    }
+
+
+    .slick {
+        &-slider{
+            position: relative;
+        }
+    
+        // радиокнопки
+        &-dots{
+          list-style-type: none;
+          position: absolute;
+          top: 28px;
+          right: 76px;
+          font-size: 0;
+          li{
+            padding: 8px!important;
+            button{
+              width: 14px!important;
+              height: 14px!important;
+              border-radius: 50%;
+              border: none;
+              background: transparent;
+              transition: $transition;
+              border: 1px solid $color-sect-imp;
+              cursor: pointer;
+              outline: none;
+              &:hover{
+                border: 1px solid $color-hov;
+              }
+            }
+          }
+          .slick-active{
+            button{
+              background: $color-sect-imp;
+              &:hover{
+                border: 1px solid $color-sect-imp;
+              }
+            }
+          }
+        }
+      }
+}

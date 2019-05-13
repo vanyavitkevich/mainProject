@@ -1,0 +1,28 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal;
+  margin: 0 auto;
+}
+
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  @extend %h1;
+}
+
+h2 {
+  @extend %h2;
+}
+
+h3 {
+  @extend %h3;
+}

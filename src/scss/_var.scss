@@ -1,0 +1,39 @@
+$bg-main: #ffffff;
+$bg-sec: #f3f3f3;
+
+$color-text: #ffffff;
+$color-h: #333b46;
+$color-hov: #19bd9a;
+$color-main-text: #81868e;
+$color-dop-h: #464646;
+$color-sect-imp: #b2b3b3;
+$color-sect-dol: #1fbba6;
+
+$border: 2px solid #ffffff;
+
+$box-shadow: 2px 2px 8px 2px $color-text;
+
+$fz-h1: 35px;
+$fz-h2: 25px;
+$fz-h3: 20px;
+
+$fz-text: 16px;
+$fz-dop: 14px;
+
+$transition: all 0.3s ease;
+
+$xs: (
+  min-width: 322px
+);
+$sm: (
+  min-width: 576px
+);
+$md: (
+  min-width: 768px
+);
+$lg: (
+  min-width: 992px
+);
+$xl: (
+  min-width: 1200px
+);

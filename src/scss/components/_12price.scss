@@ -1,0 +1,77 @@
+.price{
+    padding: 80px 0 100px;
+    background: #f3f3f3;
+    &-head{
+        width: 100%;
+        @extend %head-text;
+    }
+    &-text{
+        @extend %head-pod-text;
+        @extend %dop-text;
+        padding-bottom: 64px;
+        width: 45%;
+    }
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 0!important;
+        background: $bg-main;
+        min-height: 320px;
+        &-head{
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: 30px 0;
+            color: $color-text;
+            background: $color-hov;
+        }
+        &__center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            text-align: center;
+            &-dol{
+                color: $color-hov;
+                font-size: 43px;
+                font-weight: 600;
+                width: 100%;
+            }
+            &-mon{
+                color: $color-main-text;
+                font-size: $fz-h3;
+                font-weight: 400;
+                width: 100%;
+            }
+        }
+        &__hov{
+            padding-top: 34px;
+            padding-left: 36px;
+            &-text{
+                @extend %dop-text;
+                color: $color-main-text;
+                margin-bottom: 20px;
+            }
+        }
+        &-footer{
+            width: 100%;
+            text-align: center;
+            transition: $transition;
+            font-weight: 300;
+            padding: 24px 0;
+            color: $color-text;
+            background: $color-hov;
+            cursor: pointer;
+            &:hover{
+                color: gold;
+                background: $color-sect-dol;
+            }
+        }
+    }
+}

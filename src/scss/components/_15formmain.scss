@@ -1,0 +1,63 @@
+.form_main{
+    padding: 80px 0 130px;
+    background: $bg-main;
+    &__form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        &__lab_top{
+            outline: none;
+            background: transparent;
+            width: 33.333%;
+            input::-moz-placeholder { color: #a9a9a9; }
+            input::-webkit-input-placeholder { color: #a9a9a9; }
+            &_left{
+                padding-right: 15px;
+            }
+            &_center{
+                padding: 0 7.5px;
+            }
+            &_right{
+                padding-left: 15px;
+            }
+            &-inp{
+                padding: 10px 0 10px 24px;
+                width: 100%;
+                @extend %dop-text;
+                outline: none;
+                background: transparent;
+                border: 1px solid #a9a9a9;
+                color: #000;
+            }
+        }
+        &__textarea{
+            margin-top: 30px;
+            margin-bottom: 32px;
+            height: 180px;
+            width: 100%;
+            outline: none;
+            resize: none;
+        }
+        &__lab_bot{
+            width: 100%;
+            transition: $transition;
+        }
+        &__lab_bot-sub{
+            @extend %dop-text;
+            font-weight: 500;
+            padding: 20px 0;
+            width: 100%;
+            text-transform: uppercase;
+            color: $color-text;
+            background: $color-hov;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            transition: $transition;
+            &:hover{
+                box-shadow: 2px 2px 8px 2px $color-main-text;
+            }
+        }
+    }
+}

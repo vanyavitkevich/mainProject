@@ -1,0 +1,39 @@
+.map {
+    height: 540px; 
+    width: 100%;
+    padding: 0!important;
+    .container-fluid{
+        width: 100%!important;
+        padding: 0!important;
+    }
+    .row{
+        width: 100%;
+        padding: 0!important;
+    }
+    &__wrapper{
+        padding: 0!important;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        &-btn{
+            position: absolute;
+            text-transform: uppercase;
+            border: none;
+            outline: none;
+            background: rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $color-text;
+            z-index: 3;
+        }
+    }
+    #map_main{
+        width: 100%!important;
+        padding: 0!important;
+        z-index: -1;
+    }
+}

@@ -1,0 +1,58 @@
+.sub{
+    padding: 80px 0 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/sub.png);
+    &-head{
+        width: 100%;
+        @extend %head-text;
+        color: $color-text;
+        letter-spacing: 4.4px;
+    }
+    &-text{
+        @extend %head-pod-text;
+        @extend %dop-text;
+        padding-bottom: 64px;
+        color: $color-main-text;
+        width: 25%;
+    }
+    .row{
+        width: 100%;
+    }
+    .wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    &__form{
+        &__label{
+            outline: none;
+            background: transparent;
+            input::-moz-placeholder { color: #fff; }
+            input::-webkit-input-placeholder { color: #fff; }
+        }
+        &__label-inp{
+            padding: 10px 184px 10px 24px;
+            @extend %dop-text;
+            outline: none;
+            background: transparent;
+            border: 2px solid $color-main-text;
+            color: #fff;
+        }
+        &__label-sub{
+            @extend %dop-text;
+            transition: $transition;
+            font-weight: 500;
+            padding: 12.2px 48px;
+            text-transform: uppercase;
+            color: $color-text;
+            background: $color-hov;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            &:hover{
+                box-shadow: 2px 2px 8px 2px $color-main-text;
+            }
+        }
+    }
+}
